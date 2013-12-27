@@ -40,12 +40,13 @@ function! s:hi(item, fg, bg)
   endif
 endfunction
 
-let s:seoul256_background = 8
+let s:seoul256_background = 7
 let s:normal = 15
 let s:keyword = 38
 let s:string = 81
 let s:number = 227 " yellow
 let s:number = 219
+let s:comment = 81
 
 set t_Co=256
 
@@ -61,7 +62,7 @@ call s:hi('LineNr', 251, s:seoul256_background)
 call s:hi('Visual', '', 23)
 call s:hi('VisualNOS', '', 23)
 
-call s:hi('Comment', 81, '')
+call s:hi('Comment', s:comment, '')
 call s:hi('Number', s:number, '')
 call s:hi('Float', s:number, '')
 call s:hi('Boolean', s:number, '')
@@ -195,6 +196,18 @@ call s:hi('Question', 179, '')
 
 " Search hit bottom
 call s:hi('WarningMsg', 179, '')
+
+" ==== GITHUB ====
+call s:hi('gitcommitFirstLine', s:string, '')
+call s:hi('gitcommitSummary', s:string, '')
+call s:hi('gitcommitBranch', s:keyword, '')
+call s:hi('gitcommitSelectedType', s:keyword, '')
+call s:hi('gitcommitDiscardedType', s:keyword, '')
+call s:hi('gitcommitSelectedFile', 10, '')
+call s:hi('gitcommitHeader', s:number, '')
+call s:hi('gitcommitComment', s:comment, '')
+call s:hi('gitcommitDiscardedFile', 227, '')
+call s:hi('gitcommitUntrackedFile', 227, '')
 
 " ==== HASKELL ====
 call s:hi('hsImport', s:keyword, '')
