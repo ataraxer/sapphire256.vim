@@ -40,7 +40,7 @@ function! s:hi(item, fg, bg)
   endif
 endfunction
 
-let s:sapphire256_background = 7 " 234 for Mac
+let s:sapphire256_background = 234
 let s:normal = 15
 let s:keyword = 38
 let s:string = 123
@@ -220,7 +220,7 @@ call s:hi('hs_hlFunctionName', s:function, '')
 
 " ==== PERL ====
 call s:hi('perlSubName', s:function, '')
-call s:hi('perlSharpBang', 81, '')
+call s:hi('perlSharpBang', s:comment, '')
 call s:hi('perlRepeat', s:keyword, '')
 call s:hi('perlFunction', s:keyword, '')
 call s:hi('perlSpecialString', 207, '')
@@ -230,6 +230,17 @@ call s:hi('perlSpecialMatch', 207, '')
 call s:hi('pythonFunction', s:function, '')
 call s:hi('pythonRepeat', s:keyword, '')
 call s:hi('pythonInclude', s:keyword, '')
+
+" ==== RUBY ====
+call s:hi('rubyInclude', s:keyword, '')
+call s:hi('rubyDefine', s:keyword, '')
+call s:hi('rubyRepeat', s:keyword, '')
+call s:hi('rubyFunction', s:function, '')
+call s:hi('rubySharpBang', s:comment, '')
+call s:hi('rubyConstant', s:keyword, '')
+call s:hi('rubyRegexp', 207, '')
+call s:hi('rubyRegexpCharClass', 207, '')
+call s:hi('rubyRegexpQuantifier', 207, '')
 
 " ==== COFFEE SCRIPT ====
 call s:hi('coffeeKeyword', s:keyword, '')
