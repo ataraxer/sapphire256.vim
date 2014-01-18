@@ -241,6 +241,7 @@ call s:hi('rubyConstant', s:keyword, '')
 call s:hi('rubyRegexp', 207, '')
 call s:hi('rubyRegexpCharClass', 207, '')
 call s:hi('rubyRegexpQuantifier', 207, '')
+call s:hi('rubySymbol', 207, '')
 
 " ==== COFFEE SCRIPT ====
 call s:hi('coffeeKeyword', s:keyword, '')
@@ -252,5 +253,17 @@ call s:hi('coffeeRepeat', s:keyword, '')
 call s:hi('coffeeInterp', s:normal, '')
 call s:hi('coffeeInterpDelim', s:number, '')
 call s:hi('coffeeEscape', 207, '')
+
+" ==== HTML ====
+call s:hi('htmlTag', s:normal, '')
+call s:hi('htmlEndTag', s:normal, '')
+call s:hi('htmlArg', s:number, '')
+call s:hi('htmlTitle', s:normal, '')
+call s:hi('htmlH1', s:normal, '')
+call s:hi('htmlH2', s:normal, '')
+call s:hi('htmlH3', s:normal, '')
+call s:hi('htmlH4', s:normal, '')
+call s:hi('htmlH5', s:normal, '')
+call s:hi('htmlSpecialTagName', s:keyword, '')
 
 let g:colors_name = "sapphire256"
