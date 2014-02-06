@@ -40,7 +40,7 @@ function! s:hi(item, fg, bg)
   endif
 endfunction
 
-let s:sapphire256_background = 234
+let s:sapphire256_background = 7 " 234 for Mac
 let s:normal = 15
 let s:keyword = 38
 let s:string = 123
@@ -253,6 +253,24 @@ call s:hi('coffeeRepeat', s:keyword, '')
 call s:hi('coffeeInterp', s:normal, '')
 call s:hi('coffeeInterpDelim', s:number, '')
 call s:hi('coffeeEscape', 207, '')
+
+" ==== SCALA ====
+call s:hi('scalaPackage', s:keyword, '')
+call s:hi('scalaImport', s:keyword, '')
+call s:hi('scalaDef', s:keyword, '')
+call s:hi('scalaVal', s:keyword, '')
+call s:hi('scalaVar', s:keyword, '')
+call s:hi('scalaObject', s:keyword, '')
+call s:hi('scalaTrait', s:keyword, '')
+call s:hi('scalaClass', s:keyword, '')
+call s:hi('scalaClassName', s:function, '')
+call s:hi('scalaObjectName', s:function, '')
+call s:hi('scalaTraitName', s:function, '')
+call s:hi('scalaDefName', s:function, '')
+call s:hi('scalaConstructor', s:function, '')
+call s:hi('scalaKeyword', s:keyword, '')
+call s:hi('scalaType', s:string, '')
+call s:hi('scalaStringEscape', 207, '')
 
 " ==== HTML ====
 call s:hi('htmlTag', s:normal, '')
